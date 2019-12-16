@@ -36,28 +36,6 @@ function scrollEvents() {
     $(window).scroll(navbarCollapse);
 }
 
-function intiSwiper() {
-    const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    swiper.init();
-}
-
-
-$('#viewdetails3').collapse('hide');
-
 $(document).ready(function () {
     scrollEvents();
-
-    intiSwiper();
 });

@@ -1,59 +1,179 @@
-<section class="page-section" id="products">
+<section class="bg-light page-section" id="products">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Продукти</h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
-            <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="/img/products/pollen.jpg" alt="">
-                            <div>
-                                <h4 class="section-heading text-muted text-uppercase">БОРОВ ПРАШЕЦ "GUOZHEN" </h4>
-                                <ol class="large text-muted">
-                                    <li>Подобрява работата на сърдечно-съдовата система, укрепва кръвоносните съдовете, нормализира кръвното налягане</li>
-                                    <li>Стимулира производството на инсулин, повишава стабилността на захарта</li>
-                                    <li>Регулира функцията на стомашно-чревния тракт и проблеми с констипация ( запек )</li>
-                                    <li>Възпрепятства появата на тумори, ефикасен при възстановителни процеси след радиационно поражение и химиотерапия</li>
-                                    <span class="show-more-">
-                                    <li>Подобрява работата на сърдечно-съдовата система, укрепва кръвоносните съдовете, нормализира кръвното налягане</li>
-                                    <li>Стимулира производството на инсулин, повишава стабилността на захарта</li>
-                                    <li>Регулира функцията на стомашно-чревния тракт и проблеми с констипация ( запек )</li>
-                                    <li>Възпрепятства появата на тумори, ефикасен при възстановителни процеси след радиационно поражение и химиотерапия</li>
-                                    </span>
-                                </ol>
-                            </div>
-                            <a data-toggle="collapse" data-target="#viewdetails3">More... &raquo;</a></p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/img/products/bamboo.jpg" alt="">
-                            <div>
-                                <h4 class="section-heading text-muted text-uppercase">Бамбук "GUOZHEN" </h4>
-                                <ol class="large text-muted">
-                                        <li>Подобрява работата на сърдечно-съдовата система, укрепва кръвоносните съдовете, нормализира кръвното налягане</li>
-                                        <li>Стимулира производството на инсулин, повишава стабилността на захарта</li>
-                                        <li>Регулира функцията на стомашно-чревния тракт и проблеми с констипация ( запек )</li>
-                                        <li>Възпрепятства появата на тумори, ефикасен при възстановителни процеси след радиационно поражение и химиотерапия</li>
-                                        <span class="collapse" id="viewdetails3">
-                                        <li>Подобрява работата на сърдечно-съдовата система, укрепва кръвоносните съдовете, нормализира кръвното налягане</li>
-                                        <li>Стимулира производството на инсулин, повишава стабилността на захарта</li>
-                                        <li>Регулира функцията на стомашно-чревния тракт и проблеми с констипация ( запек )</li>
-                                        <li>Възпрепятства появата на тумори, ефикасен при възстановителни процеси след радиационно поражение и химиотерапия</li>
-                                        </span>
-
-                                    </ol>
-                                </div>
-                                <a data-toggle="collapse" data-target="#viewdetails3">More... &raquo;</a>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 products-item">
+                <a class="products-link" data-toggle="modal" href="#productsModal1">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <img class="img-fluid" src="img/products/pollen.jpg" alt="">
+                </a>
+                <div class="products-caption">
+                    <h4>Боров Прашец</h4>
+                    <p class="text-muted">“GUOZHEN”
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 products-item">
+                <a class="products-link" data-toggle="modal" href="#productsModal2">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/products/bamboo.jpg" alt="">
+                </a>
+                <div class="products-caption">
+                    <h4>БАМБУК НА ЗДРАВЕТО</h4>
+                    <p class="text-muted">“GUOZHEN”
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 products-item">
+                <a class="products-link" data-toggle="modal" href="#productsModal3">
+                    <div class="products-hover">
+                        <div class="products-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/products/pollen_sashe.jpg" alt="">
+                </a>
+                <div class="products-caption">
+                    <h4>Боров Прашец - Сашета</h4>
+                    <p class="text-muted">“GUOZHEN”
+                        </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
+<!-- Modal 1 -->
+<div class="products-modal modal fade" id="productsModal1" tabindex="-1" role="dialog"
+    aria-labelledby="productsModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <i class="fas fa-times"></i>
+                </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <!-- products Modal - Title -->
+                            <h2 class="section-heading text-uppercase">Боров Прашец</h2>
+                            <!-- Icon Divider -->
+                            <h3 class="section-subheading text-muted">
+                                Guozhen
+                            </h3>
+                            <!-- products Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/products/pollen-330x400.jpg" alt="">
+                            <!-- products Modal - Text -->
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
+                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="products-modal modal fade" id="productsModal2" tabindex="-1" role="dialog"
+    aria-labelledby="productsModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <i class="fas fa-times"></i>
+                </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- products Modal - Title -->
+                            <h2 class="products-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- products Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/products/bamboo-330x400.jpg" alt="">
+                            <!-- products Modal - Text -->
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
+                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="products-modal modal fade" id="productsModal3" tabindex="-1" role="dialog"
+    aria-labelledby="productsModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <i class="fas fa-times"></i>
+                </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- products Modal - Title -->
+                            <h2 class="products-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- products Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/products/pollen_sashe-330x400.jpg" alt="">
+                            <!-- products Modal - Text -->
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit
+                                asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
