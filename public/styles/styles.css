@@ -1,5 +1,6 @@
 html, body {
   overflow-x: hidden;
+  padding-right: 0 !important;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
 
 p {
@@ -301,6 +302,7 @@ header.masthead {
         border-right-width: 14px;
         border-left-width: 0; }
     .timeline > li .timeline-image {
+      overflow: hidden;
       position: absolute;
       z-index: 100;
       left: 0;
@@ -311,13 +313,20 @@ header.masthead {
       color: white;
       border: 2px solid #e9ecef;
       border-radius: 100%;
-      background-color: #fed136; }
+      background-color: #ffffff; }
       .timeline > li .timeline-image h4 {
         font-size: 10px;
         line-height: 14px;
         margin-top: 12px; }
       .timeline > li .timeline-image .image {
         max-width: 100%;
+        height: -webkit-fill-available;
+        -webkit-box-shadow: 1px 3px 21px 11px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 3px 21px 11px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 3px 21px 11px rgba(0, 0, 0, 0.3); }
+      .timeline > li .timeline-image .image-firm {
+        position: relative;
+        right: 30px;
         height: -webkit-fill-available;
         -webkit-box-shadow: 1px 3px 21px 11px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 1px 3px 21px 11px rgba(0, 0, 0, 0.3);
@@ -372,6 +381,14 @@ header.masthead {
       padding: 0 30px 20px 20px;
       text-align: left; } }
 
+@media (max-width: 991px) {
+  .timeline > li .timeline-image .image-firm {
+    right: 20px; } }
+
+@media (max-width: 767px) {
+  .timeline > li .timeline-image .image-firm {
+    right: 18px; } }
+
 @media (min-width: 992px) {
   .timeline > li {
     min-height: 150px; }
@@ -399,6 +416,8 @@ header.masthead {
       margin-left: -85px; }
       .timeline > li .timeline-image h4 {
         margin-top: 40px; }
+      .timeline > li .timeline-image .image-firm {
+        right: 34px; }
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 100px 20px 20px; } }
 

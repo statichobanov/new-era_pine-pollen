@@ -1,6 +1,7 @@
 // Global styling for this template
 html, body {
     overflow-x: hidden;
+    padding-right: 0 !important; // this is becouse of the bootstrap glitch which adds 17px padding-right on ,modal close.
     @include body-font;
 }
 
